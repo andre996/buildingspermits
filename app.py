@@ -11,6 +11,7 @@ df = pd.read_json(json.dumps(r.json()))
 
 
 app = Dash(__name__, use_pages=True)
+server = app.server  # expose server variable for Procfile
 
 theme = {
     "accent":"#fa4f56",
